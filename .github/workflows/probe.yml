@@ -1,0 +1,10 @@
+name: probe
+on:
+  push:
+    branches: [main]
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo
+        run: echo "hummbl-commons actions probe"
